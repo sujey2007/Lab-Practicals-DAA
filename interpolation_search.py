@@ -17,7 +17,7 @@ def interpolation_search(arr, target):
 
         pos = low + int(((target - arr[low]) * (high - low)) /
                         (arr[high] - arr[low]))
-
+                            
         if arr[pos] == target:
             return pos, comparisons
         elif arr[pos] < target:
